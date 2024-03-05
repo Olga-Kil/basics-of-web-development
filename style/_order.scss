@@ -1,5 +1,5 @@
 .order {
-    background: gray;
+    background: url(../img/bg_order.png) center no-repeat;
 }
 
 .order__title {
@@ -11,7 +11,6 @@
 
 .form {
     display: flex;
-
 }
 
 .form__col {
@@ -59,6 +58,16 @@
             outline: none;
         }
     }
+}
+
+.form__col--right {
+    display: flex;
+    flex-direction: column;
+    
+    .form__row {
+        flex-direction: column;
+
+    }
 
     .form__input--textarea {
         width: 100%;
@@ -66,7 +75,7 @@
         resize: none;
     }
 
-        .radio__vis {
+    /* .radio__vis {
             width: 26px;
             height: 26px;  
             position: relative;
@@ -86,9 +95,98 @@
                 transform: translate(-50%, -50%);
             }
         }
+*/
+   
+}
+
+.form__controls {
+    display: flex;
+    justify-content: space-between;
+    
+    .radio {
+        display: flex;
+        flex-direction: row;
+        padding-top: 30px;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .radio__title {
+        padding-top: 5px;
+        padding-left: 10px;
+    }
 
     .checkbox {
-        width: 24px;
-        height: 24px;
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+        cursor: pointer;
     }
+}
+
+.form__row--lower {
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+    
+    .button {
+        margin-right: 20px;
+    }
+}
+
+.radio__elem {
+    display: none;
+
+    &:checked ~ .radio__vis {
+        &::before {
+            display: block;
+        }
+    }
+
+&:checked ~ .checkbox__vis {
+    &::before {
+        display: block;
+    }
+}
+}
+
+.radio__vis {
+        width: 26px;
+        height: 26px;  
+        position: relative;
+        border-radius: 50%;  
+        background: #fff; 
+
+        &:before {
+            content: "";
+            display: none;
+            width: 14px;
+            height: 14px;  
+            background: rgb(254, 219, 63);
+            border-radius: 50%;  
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+}
+
+.checkbox__vis {
+    width: 26px;
+    height: 26px;  
+    position: relative; 
+    background: #fff; 
+
+    &:before {
+            content: "";
+            display: none;
+            width: 14px;
+            height: 14px;  
+            background: url(../img/checkmark.png) center;
+            border-radius: 50%;  
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
 }

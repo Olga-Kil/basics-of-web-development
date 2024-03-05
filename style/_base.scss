@@ -1,6 +1,6 @@
 html {
     font-family: "Alegreya Sans";
-    font-size: 16px;
+    font-size: 18px;
 }
 
 body,
@@ -79,6 +79,10 @@ img {
 
 .wrapper {
     min-height: 100%;
+}
+
+.section {
+    height: 100vh;
 }
 
 .container {
@@ -183,9 +187,7 @@ transform: translate(50% 50%);
     color: rgb(143, 0, 255);
 }
 
-.wrapper__content--main {
-    background: url(../img/nbgB77C1HAg1.png) center top no-repeat, url(../img/56278948-888x5442.png) center bottom no-repeat;
-} 
+
 
 .breadcrumbs {
     font-style: normal;

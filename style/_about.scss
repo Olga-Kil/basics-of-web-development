@@ -11,10 +11,14 @@
     text-align: center;
 }
 
+.about-container {
+    padding-top: 107px;
+}
+
 .about__title {
     font-size: 48px;
     font-weight: 700;;
-    margin-top: 107px;
+    margin-top: 0px;
     margin-bottom: 17px;
 }
 
@@ -58,7 +62,7 @@
             background-color:  rgb(242, 245, 244);
             display: flex;
             justify-content: center;
-            padding-top: 30px; 
+            align-items: center;
         }
         .about__icon {
             width: 68px;
