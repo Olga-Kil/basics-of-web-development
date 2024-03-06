@@ -1,0 +1,15 @@
+.menu {
+    display: flex;
+    font-size: 18px;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        width: 638px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: row;
+        padding-top: 10px;
+        font-weight: 700;
+    }
+}

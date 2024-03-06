@@ -1,92 +1,44 @@
-.about__title, .about__subtitle {
-    color: black;
-}
-.about__descript, .about__discription {
-    color: rgb(102, 102, 102);
-}
+.about {
+    &__title , &__subtitle {
+        color: black;
+    }
 
-.about__title, .about__discription {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
+    &__descript , &__description {
+        color: rgb(102, 102, 102);
+    }
 
-.about-container {
-    padding-top: 107px;
-}
-
-.about__title {
-    font-size: 48px;
-    font-weight: 700;;
-    margin-top: 0px;
-    margin-bottom: 17px;
-}
-
-.about__discription {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 49px;
-}
-
-.about__list {
-    display: flex;
-    justify-content: space-between;
-
-
-    .about__item {
-        width: 276px;
-        height: 268px;
+    &-container {
+        padding-top: 107px;
+    }
+    
+    &__title , &__description {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-       position: relative;
+        justify-content: center;
+        text-align: center;
+    }
 
-        &--circle::before {
-            content: url(../img/about_separate.png);
-            position: absolute;
-            top: 50px;
-            left: 230px;
-            transform: translateX(50%);
-            
-        }
-
-        .about-reused {
-            height: 118px;
-        }
-
-        .about__circle {
-            width: 128px;
-            height: 128px;
-            border-radius: 50%;
-            background-color:  rgb(242, 245, 244);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .about__icon {
-            width: 68px;
-            height: 68px;   
-            border: 1px dashed;  
-            border-color: rgb(180, 188, 186); 
-        }
-
-        .about-reused {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            .about__subtitle {
-                margin-bottom: 20px;
-                margin-block-start: 0;
-                line-height: 1;
-            }
-            .about__descript {
-                font-size: 18px;
-                font-weight: 300;
-                text-align: center; 
-            }
-        }
-
-        
+    &__title {
+        font-size: 48px;
+        font-weight: 700;;
+        margin-top: 0px;
+        margin-bottom: 17px;
+    }
+    &__description {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 49px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

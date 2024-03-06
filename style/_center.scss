@@ -1,0 +1,21 @@
+.center {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.heading {
+&__main {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0px;
+    margin-bottom: 0;
+}
+&__disc {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+}
+}

@@ -211,13 +211,14 @@ h1 {
 
 .hello {
   background: url(../img/bg.png) no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
-.hello .header {
+
+.header {
   color: #fff;
   padding-top: 28px;
 }
-.hello .header .header__container {
+.header__container {
   height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -227,22 +228,13 @@ h1 {
           justify-content: space-between;
 }
 
-.contact {
-  padding-top: 10px;
-  font-size: 22px;
-  font-weight: 700;
-}
-.contact:before {
-  content: url(../img/icon_phone.png);
-}
-
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 18px;
 }
-.menu .menu__list {
+.menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,7 +243,7 @@ h1 {
           justify-content: space-between;
   width: 638px;
 }
-.menu .menu__item {
+.menu__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,18 +255,13 @@ h1 {
   font-weight: 700;
 }
 
-.heading .heading__main {
-  font-size: 48px;
+.contact {
+  padding-top: 10px;
+  font-size: 22px;
   font-weight: 700;
-  line-height: 58px;
-  letter-spacing: 0px;
-  margin-bottom: 0;
 }
-.heading .heading__disc {
-  font-size: 21px;
-  font-weight: 400;
-  line-height: 25px;
-  letter-spacing: 0px;
+.contact:before {
+  content: url(../img/icon_phone.png);
 }
 
 .center {
@@ -285,21 +272,19 @@ h1 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.center .carusel__list {
-  margin-top: 150px;
-  margin-right: 45px;
+
+.heading__main {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 0px;
+  margin-bottom: 0;
 }
-.center .carusel__list .carusel__dots {
-  width: 9px;
-  height: 9px;
-  color: #fff;
-  position: fixed;
-}
-.center .carusel__list .carusel__dots:hover {
-  border: 1px solid #fff;
-  border-radius: 50%;
-  width: 12px;
-  height: 12px;
+.heading__disc {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
 }
 
 .hello__list {
@@ -309,7 +294,8 @@ h1 {
   padding-top: 15px;
   padding-bottom: 45px;
 }
-.hello__list .hello__item {
+
+.hello__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,23 +309,23 @@ h1 {
   letter-spacing: 0px;
   margin-right: 30px;
 }
-.hello__list .hello__item:last-child {
+.hello__item:last-child {
   margin-right: 0;
 }
-.hello__list .hello__item .hello__icon {
+.hello__item .hello__icon {
   margin-right: 10px;
-  border: 1px dashed #fff;
 }
 
 .about__title, .about__subtitle {
   color: black;
 }
-
-.about__descript, .about__discription {
+.about__descript, .about__description {
   color: rgb(102, 102, 102);
 }
-
-.about__title, .about__discription {
+.about-container {
+  padding-top: 107px;
+}
+.about__title, .about__description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -348,19 +334,13 @@ h1 {
           justify-content: center;
   text-align: center;
 }
-
-.about-container {
-  padding-top: 107px;
-}
-
 .about__title {
   font-size: 48px;
   font-weight: 700;
   margin-top: 0px;
   margin-bottom: 17px;
 }
-
-.about__discription {
+.about__description {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 49px;
@@ -374,7 +354,8 @@ h1 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.about__list .about__item {
+
+.about__item {
   width: 276px;
   height: 268px;
   display: -webkit-box;
@@ -392,7 +373,7 @@ h1 {
           justify-content: space-between;
   position: relative;
 }
-.about__list .about__item--circle::before {
+.about__item--circle::before {
   content: url(../img/about_separate.png);
   position: absolute;
   top: 50px;
@@ -400,10 +381,8 @@ h1 {
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
 }
-.about__list .about__item .about-reused {
-  height: 118px;
-}
-.about__list .about__item .about__circle {
+
+.about__circle {
   width: 128px;
   height: 128px;
   border-radius: 50%;
@@ -418,13 +397,15 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
 }
-.about__list .about__item .about__icon {
+
+.about__icon {
   width: 68px;
   height: 68px;
-  border: 1px dashed;
   border-color: rgb(180, 188, 186);
 }
-.about__list .about__item .about-reused {
+
+.about-reused {
+  height: 118px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -434,13 +415,13 @@ h1 {
           flex-direction: column;
   text-align: center;
 }
-.about__list .about__item .about-reused .about__subtitle {
+.about-reused__subtitle {
   margin-bottom: 20px;
   -webkit-margin-before: 0;
           margin-block-start: 0;
   line-height: 1;
 }
-.about__list .about__item .about-reused .about__descript {
+.about-reused__descript {
   font-size: 18px;
   font-weight: 300;
   text-align: center;
@@ -507,6 +488,53 @@ h1 {
   color: black;
 }
 
+.reviews__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 42px 42px;
+  background: rgb(248, 250, 249);
+  width: 940px;
+  height: 348px;
+}
+.reviews__content .reviews__avatar {
+  width: 253px;
+  height: 264px;
+}
+.reviews__content .reviews__avatar .reviews__avatar-photo {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.reviews__content .reviews__desc {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 30px 30px;
+}
+.reviews__content .reviews__desc .reviews__subtitle {
+  color: black;
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.reviews__content .reviews__desc .reviews__discript {
+  color: gray;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  padding-right: 80px;
+}
+.reviews__content .reviews__desc .reviews__name {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+}
+
 .reviews__ava {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -515,6 +543,25 @@ h1 {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 15px;
+}
+.reviews__ava__ava-item {
+  width: 74px;
+  height: 74px;
+  border: 6px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.reviews__ava--active {
+  border-color: rgb(254, 219, 63);
+}
+.reviews__ava__avatar-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
 }
 
 .reviews__ava-item {
@@ -536,7 +583,7 @@ h1 {
   right: 0;
   display: block;
 }
-.reviews__ava-item .reviews__avatar-link .reviews__avatar-photo {
+.reviews__ava-item__avatar-photo {
   display: block;
   width: 100%;
   height: 100%;
@@ -755,6 +802,7 @@ h1 {
 
 .map__container {
   margin-bottom: 20px;
+  background-size: cover;
 }
 
 .footer__container {

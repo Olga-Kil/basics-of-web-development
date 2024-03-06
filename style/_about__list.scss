@@ -1,0 +1,56 @@
+.about__list {
+    display: flex;
+    justify-content: space-between;  
+}
+
+.about__item {
+    width: 276px;
+    height: 268px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+   position: relative;
+
+    &--circle::before {
+        content: url(../img/about_separate.png);
+        position: absolute;
+        top: 50px;
+        left: 230px;
+        transform: translateX(50%);
+        
+    } 
+}
+
+.about__circle {
+        width: 128px;
+        height: 128px;
+        border-radius: 50%;
+        background-color:  rgb(242, 245, 244);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about__icon {
+        width: 68px;
+        height: 68px;   
+        border-color: rgb(180, 188, 186); 
+    }
+
+
+.about-reused {
+    height: 118px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+&__subtitle {
+    margin-bottom: 20px;
+    margin-block-start: 0;
+    line-height: 1;
+}
+&__descript {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center; 
+}
+}
