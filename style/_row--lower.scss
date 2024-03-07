@@ -1,0 +1,10 @@
+.form__row--lower {
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+    padding: 40px;
+    
+    .button {
+        margin-right: 20px;
+    }
+}
