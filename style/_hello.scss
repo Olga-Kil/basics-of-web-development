@@ -5,26 +5,26 @@
 
 .hello__list {
     display: flex;
-    padding-top: 15px;
-    padding-bottom: 45px;
+    padding-top: 0.8rem;
+    padding-bottom: 2.5rem;
 }
 
 .hello__item {
     display: flex;
     justify-content: space-between;
-    width: 142px;
-    height: 41px;
+    width: 7.8rem;
+    height: 2.3rem;
     font-weight: 700;
-    line-height: 18px;
+    line-height: 1rem;
     letter-spacing: 0px;
-    margin-right: 30px;
+    margin-right: 1.6rem;
 
     &:last-child {
         margin-right: 0;
     }
 
     .hello__icon {
-        margin-right: 10px;
+        margin-right: 0.5rem;
        
     }
 }

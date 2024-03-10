@@ -1,15 +1,15 @@
 .radio {
     display: flex;
     flex-direction: row;
-    padding-top: 30px;
+    padding-top: 1.6rem;
     cursor: pointer;
     user-select: none;
-    margin-right: 20px;
+    margin-right: 1.1rem;
 }
 
 .radio__title {
-    padding-top: 5px;
-    padding-left: 10px;
+    padding-top: 0.3rem;
+    padding-left: 0.5rem;
 }
 
 .radio__elem {
@@ -29,8 +29,8 @@
 }
 
 .radio__vis {
-    width: 26px;
-    height: 26px;  
+    width: 1.4rem;
+    height: 1.4rem;  
     position: relative;
     border-radius: 50%;  
     background: #fff; 
@@ -38,8 +38,8 @@
     &:before {
         content: "";
         display: none;
-        width: 14px;
-        height: 14px;  
+        width: 0.7rem;
+        height: 0.7rem;  
         background: rgb(254, 219, 63);
         border-radius: 50%;  
         position: absolute;
